@@ -4,8 +4,8 @@ function BookOrder() {
 /* BOOK ORDERS */
     
 /* FIRST PRODUCT */
-    productName1 = document.books.oneQuantity.value;
-    itemN1 = productName1 * 25.19;
+    product1 = document.books.oneQuantity.value;
+    itemN1 = product1 * 25.19;
     document.books.itemN1.value = firstTotal.toFixed(2);
     
 // /* FIRST PRODUCT */
