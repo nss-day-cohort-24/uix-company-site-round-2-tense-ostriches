@@ -12,7 +12,7 @@
 
 </head>
 
-<body></body>
+<body>
         <header>
                 <nav class="navi">
                  <a href="../index.html"><img src="../images/openideo_logo.png" title="company-logo" class="main-logo" style="padding-top: .6em;"></a>
@@ -36,35 +36,44 @@
             <!--<img src="images/3.jpg" alt="we are" class="img">-->
         </div>
         <div class="row">
-            <div class="column">
-                <div id="map" style="width:100%;height:500px"></div>
+                <div class="column">
+                    <div id="map" style="width:100%;height:500px"></div>
+                </div>
+                <div class="column">
+                    <form action="/action_page.php">
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="country">Country</label>
+                        <select id="country" name="country" placeholder="your country...">
+                            <option value="australia">Australia</option>
+                            <option value="canada">Canada</option>
+                            <option value="usa">USA</option>
+                        </select>
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+                        <input style= position:absolute; top:50%; right:10%; width:40%; type:"submit" onclick=""; >
+                    </form>
+                </div>
             </div>
-            <div class="column">
-                <form action="/action_page.php">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <label for="country">Country</label>
-                    <select id="country" name="country" placeholder="your country...">
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="usa">USA</option>
-                    </select>
-                    <label for="subject">Subject</label>
-                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-                    <input style= position:absolute; top:50%; right:10%; width:40%; type:"submit" onclick=""; >
-                </form>
-            </div>
-        </div>
     </div>
 
-    <img src="../images/5bg.png" class="footer-img">
+    <!-- <img src="../images/5bg.png" class="footer-img"> -->
 
 
     </main>
+
     <footer>
-        
+            
+            <ul class="footer-ul">
+                <li>powered by openideo, inc. &copy; copyright</li>&nbsp; &nbsp; 
+                <br>
+                    <li><a href="nav-pages/about.html">about</a></li> &#124; 
+                    <li><a href="nav-pages/contact.html">contact</a></li> &#124;  
+                    <li><a href="../#products">products</a></li> &#124; 
+                    <li><a href="nav-pages/shopping.html">shopping cart</a></li> &nbsp;  &nbsp; 
+            </ul>
     </footer>
     
     <script src="js/contact.js"></script>
