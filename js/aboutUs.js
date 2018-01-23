@@ -4,6 +4,7 @@ function Person(first, last, title, phone) {
     this.title = title;
     this.phone = phone;
 }
+
 Person.prototype.badge = function() {
     return "<h3>" + this.firstName + " " + this.lastName + "</h3>" + "<p>" + this.title + "<br>" + this.phone + "</p>"
 };
