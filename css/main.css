@@ -1,6 +1,88 @@
+* {
+    margin: 0;
+}
+
+/* ===== MAIN ELEMENTS ===== */
+
+body{
+    font-family: 'Microsoft Yi Baiti' ,sans-serif;
+    padding: 1em;
+}
+
 nav {
+    padding-bottom: 1.5em;
+}
+
+li {
+    display: inline;
+    font-variant: small-caps;
+    font-size: 18px;
+}
+
+
+footer {
+    background-color: rgb(245, 232, 195);
+    display: flex;
+    flex-flow: row wrap;
+    padding: 1em;
+}
+
+footer > p {
+    line-height: 1.5px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* ===== LINKS ===== */
+
+a:link {
+    color: rgb(217, 222, 222);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(231, 90, 107);
+}
+
+a:visited {
+    color: rgb(16, 185, 210);
+}
+
+
+
+/* ===== CLASSES AND IDS ===== */
+
+.lrg-text {
+    text-align: left;
+    font-size: 40px;
+}
+
+.navi {
     background-color: black;
     color: white;
-    font-family: sans-serif;
-    
+    font-family: 'Gotham', sans-serif;
+    display: flex;
+    flex-flow: wrap row;
+}
+
+.small-img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 1em;
+}
+
+.simpleCart {
+    text-align: center;
+    border: thin solid rgb(121,204,201);
+    border-radius: 10%;
+    margin: auto;
+    width: 20%;
+}
+
+.item-price {
+    font-weight: bold;
+    line-height: 1.5px;
 }
