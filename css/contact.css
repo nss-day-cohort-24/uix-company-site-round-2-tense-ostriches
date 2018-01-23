@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 body{
     background-image: url('../images/11.jpg');
@@ -45,7 +47,7 @@ textarea {
     right:50px;
     
 }
-.img{
+.img {
     width: 850px;
     height: auto;
     position: absolute;
@@ -72,15 +74,12 @@ textarea {
     display: table;
     clear: both;
 }
-.my-footer{
-    height:95px;
-}
-.my-footer{
+
+.footer-img{
     z-index: 3;
     position: absolute;
-    top: 500px;
-    left:-5px;
-
+    margin-top: 28%;
+    width: 100%;
     }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
