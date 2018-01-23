@@ -1,19 +1,27 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 /* ===== MAIN ELEMENTS ===== */
 
-body{
-    font-family: 'Microsoft Yi Baiti' ,sans-serif;
-    padding: 1em;
+body {
+    font-family: 'Microsoft Yi Baiti', sans-serif;
 }
 
+main {
+    padding-left: 12em;
+    padding-right: 12em;
+}
+
+h1 {
+    text-align: center;
+}
 header {
-    
     min-width: 400px;
 }
 
+/* NAVIGATION */
 nav {
     padding-bottom: .5em;
     padding-left: 1em;
@@ -25,24 +33,13 @@ li {
     font-size: 18px;
 }
 
-
+/* FOOTER */
 footer {
-    background-color: rgb(245, 232, 195);
-    display: flex;
-    flex-flow: row wrap;
-    margin: 1em;
-    padding: 1em;
+    background-color: black;
+    color: white;
 }
 
-.table {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-h1 {
-    text-align: center;
-}
 
 /* ===== LINKS ===== */
 
@@ -64,8 +61,12 @@ a:visited {
 /* ===== CLASSES AND IDS ===== */
 
 .lrg-text {
-    text-align: left;
+    text-align: center;
     font-size: 40px;
+}
+
+.center-text {
+    text-align: center;
 }
 
 .navi {
@@ -103,8 +104,17 @@ a:visited {
     text-align: center;
 }
 
-/* .center-img {
-    margin-left: auto; 
-    margin-right: auto; 
-    width: 50%;
-} */
+.table {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-blocks {
+    display: inline-block;
+}
+
+
+.footer-ul {
+    text-align: right;
+}
