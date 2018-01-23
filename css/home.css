@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('../images/9.jpg');
+    background-repeat: no-repeat;
+    background-size:100%;
+    font-family: 'Microsoft Yi Baiti',sans-serif;
+
+}
+h1{
+    font-size:80px;
+}
