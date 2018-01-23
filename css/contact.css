@@ -6,8 +6,18 @@ body{
     background-repeat: no-repeat;
     font-family: 'microsoft yi baili', sans-serif;
 }
-
+header{
+    background-color: black;
+    position: absolute;
+    top:-1px;
+    width: 100%;
+    max-height: 50px;
+    left:0px;
+}
 /* Style inputs */
+h2{
+    font-size: 25px;
+}
 
 input[type=text],
 select,
@@ -24,10 +34,11 @@ textarea {
 .submit {
     background-color: #7a9c3d;
     color: rgb(230, 248, 205);
-    padding: 12px 20px;
+    padding: 15px 25px;
     border: none;
     cursor: pointer;
     border-radius: 10%;
+    font-size: 15px;
 }
 
 .submit:hover {
@@ -43,6 +54,7 @@ textarea {
     width: 60%;
     position: absolute;
     right:50px;
+    top:100px;
     
 }
 .img{
@@ -56,12 +68,16 @@ textarea {
 
 /* Create two columns that float next to eachother */
 
-.column {
-    float: left;
+#column {
+    float: right;
     width: 50%;
     margin-top: 6px;
     padding: 20px;
-    
+    position: absolute;
+    top:20%;  
+    right: 10px;  
+    background-color: #ebf1ce 0.8;
+   
 }
 
 
@@ -73,25 +89,32 @@ textarea {
     clear: both;
 }
 .my-footer{
-    height:95px;
+    height:200px;
 }
 .my-footer{
-    z-index: 3;
-    position: absolute;
-    top: 500px;
-    left:-5px;
+    z-index: 5;
+    position: fixed;
+    top: 750px;
+    left:0px;
+    width: 100%;
 
+    }
+    .main-mes{
+        position: absolute;
+       left:560px;
     }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 
 @media (max-width: 600px) {
-    .column,
-    input[type=submit] {
-        width: 100%;
+    #column,
+     {
+        width:80 %;
         margin-top: 0;
+        position: absolute;
+        left: 5px;
     }
+body{
+    background-size: a;
 }
-.my-footer{
-    width:600px;
-}
+
