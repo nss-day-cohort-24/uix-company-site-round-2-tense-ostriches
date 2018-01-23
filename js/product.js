@@ -32,21 +32,20 @@ products.push = new product("Jumprope","This product is great!",22,"www.google.c
 
 // Form that holds the products to be populated on the page
 var form_product;
-// var product_slider_wrapper;
-var product_container;
-// var product_quick_view_container;
 
+// var product_quick_view_container;
+// var product_slider_wrapper;
 //Put code here to target the div entry point... document.getElementsByClassName
 
 
-product_container = document.createElement("ul");//Start of the container
-var element = document.getElementById("product_id");
+var product_container = document.createElement("ul");//Start of the container
+var element = document.getElementById("product_id").innerHTML;
 
 // Loop that will iterate through the products array, using each product property to fill in the form.
 for(var i = 0; i< products.length;i++){
 
-	form_product += `<li class="product-item"><a href="LINK HERE"> <img src= ${products[i].src}>,/a></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
-    <div class="shoppingcartbutton"><a href="#####.com" class="shoppingcartbutton" role="button"></a></div></li>`;
+	form_product += `<li class="product-item"><a href="LINK HERE"> <img src="${products[i].src}"></a> </br><h3>${products[i].name}</h3></br> <h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
+    <div class="shoppingcartbutton"><a href="####FOR SHOPPING CART PAGE####.com" class="shoppingcartbutton" role="button"></a></div></li>`;
  
 	product_container.appendChild(form_product);
 	element.appendChild(product_container);
