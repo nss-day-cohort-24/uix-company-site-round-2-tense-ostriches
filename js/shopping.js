@@ -37,7 +37,7 @@ function BookOrder() {
 /* CALCULATIONS */
     
 /* SUB-TOTAL */
-qtyTotal = itemN2 + itemN3 + itemN4 + itemN5 + itemN6;
+qtyTotal = itemN1 + itemN2 + itemN3 + itemN4 + itemN5 + itemN6;
     document.books.qtyTotal.value = qtyTotal.toFixed(2);
     
 

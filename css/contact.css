@@ -73,6 +73,12 @@ textarea {
     z-index: 2;
 }
 
+.product-blocks {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: space-around;
+}
+
 /* Create two columns that float next to eachother */
 
 .column {

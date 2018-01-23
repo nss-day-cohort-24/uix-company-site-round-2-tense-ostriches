@@ -2,7 +2,7 @@
 .badge-container {
     display: inline-flex;
     flex-flow: row wrap;
-    align-content: space-around;   
+    align-content: space-around;
 }
 
 .staff-badge {
@@ -11,9 +11,15 @@
     font-family: Arial, Helvetica, sans-serif;
     margin: 1rem 1rem;   
     padding-left: 1em;
-    padding-right: 1em;
+    padding-right: 1em; 
+    width: 30%;
 }
 /* 
 h3 {
    font-family: 
 } */
+
+.img-size {
+    width: 115px;
+    height: 115px;
+}
