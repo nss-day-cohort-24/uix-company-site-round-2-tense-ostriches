@@ -1,56 +1,70 @@
-/*
-function product(n, d, p, u){
+
+function product(n, d, p, u, img){
 
 	this.name = n;
 	this.description = d;
 	this.price = p;
 	this.url = u;
-
+	this.img = img;
 }
-*/
 
-// A button for adding to the shopping cart
 
 var shopping_stack = document.createElement("button");
 
-// Outline of object of each product.
-var product = { name: "", description: "", price: 0, url: "", src: ""};
 
-// Container of products
-var products = [];
+
 
 //Push all products into the array
-products.push = new product("Blue Apron","This product is great!",35,"www.google.com/image/igotthissomewhere", "images/box_food_service.jpg");
-products.push = new product("Elder","This product is great!",44,"www.google.com/image/igotthissomewhere", "images/elderly_lady_visited_by_girl_service.jpg");
-products.push = new product("Fitbit Charge 2","This product is great!",18,"www.google.com/image/igotthissomewhere", "images/fitbit_charge_2.jpg");
-products.push = new product("Private Trainer","This product is great!",33,"www.google.com/image/igotthissomewhere", "images/older_man_free_weight.jpg");
-products.push = new product("Relax Alot","This product is great!",9,"www.google.com/image/igotthissomewhere", "images/massage_shoes.jpg");
-products.push = new product("Life Alert","This product is great!",99,"www.google.com/image/igotthissomewhere", "images/lifealert.png");
-products.push = new product("Customizable Calendar","This product is great!",5,"www.google.com/image/igotthissomewhere", "images/calendar.jpg");
-products.push = new product("Jumprope","This product is great!",22,"www.google.com/image/igotthissomewhere", "images/jumprope.jpg");
+// Container of products
+let productArr = [
 
+	new product("Blue Apron","This product is great!",35,"www.google.com/image/igotthissomewhere", "images/box_food_service.jpg"),
+	new product("Elder","This product is great!",44,"www.google.com/image/igotthissomewhere", "images/elderly_lady_visited_by_girl_service.jpg"),
+	new product("Fitbit Charge 2","This product is great!",18,"www.google.com/image/igotthissomewhere", "images/fitbit_charge_2.jpg"),
+	new product("Private Trainer","This product is great!",33,"www.google.com/image/igotthissomewhere", "images/older_man_free_weight.jpg"),
+	new product("Relax Alot","This product is great!",9,"www.google.com/image/igotthissomewhere", "images/massage_shoes.jpg"),
+	new product("Life Alert","This product is great!",99,"www.google.com/image/igotthissomewhere", "images/lifealert.png"),
+	new product("Customizable Calendar","This product is great!",5,"www.google.com/image/igotthissomewhere", "images/calendar.jpg"),
+	new product("Jumprope","This product is great!",22,"www.google.com/image/igotthissomewhere", "images/jumprope.jpg")
+];
 
 // Form that holds the products to be populated on the page
 var form_product;
-// var product_slider_wrapper;
-var product_container;
-// var product_quick_view_container;
 
+// var product_quick_view_container;
+// var product_slider_wrapper;
 //Put code here to target the div entry point... document.getElementsByClassName
 
 
-product_container = document.createElement("ul");//Start of the container
-var element = document.getElementById("product_id");
+//var product_container = document.createElement("ul");//Start of the container
+//var element = document.getElementById("product_id");
+
+var product_container = "<div>";
 
 // Loop that will iterate through the products array, using each product property to fill in the form.
-for(var i = 0; i< products.length;i++){
+for(let i = 0; i < productArr.length;i++){
 
-	form_product += `<li class="product-item"><a href="LINK HERE"> <img src= ${products[i].src}>,/a></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
-    <div class="shoppingcartbutton"><a href="#####.com" class="shoppingcartbutton" role="button"></a></div></li>`;
+	form_product += `<section class="product-item">
+	<a href="LINK HERE">
+	 <img src="${productArr[i].img}">
+	 </a> 
+	<h3>${productArr[i].name}</h3>
+	 <h4>${productArr[i].description}  </br>  ${productArr[i].price}</h4>
+	<div class="shoppingcartbutton">
+	<a href="####FOR SHOPPING CART PAGE####.com" class="shoppingcartbutton" role="button"></a>
+		</div>
+	</section>`;
  
-	product_container.appendChild(form_product);
-	element.appendChild(product_container);
+	
 }
+
+//product_container.appendChild(form_product);
+product_container += form_product + "</div>";
+
+//element.appendChild(product_container);
+document.getElementById("product_id").innerHTML += product_container;
+
+
 
 //var html += ''
 /*
