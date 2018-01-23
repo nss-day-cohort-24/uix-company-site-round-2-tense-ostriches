@@ -1,16 +1,30 @@
 * {
     margin: 0;
+    padding: 0;
 }
 
 /* ===== MAIN ELEMENTS ===== */
 
-body{
-    font-family: 'Microsoft Yi Baiti' ,sans-serif;
-    padding: 1em;
+body {
+    font-family: 'Microsoft Yi Baiti', sans-serif;
 }
 
+main {
+    padding-left: 12em;
+    padding-right: 12em;
+}
+
+h1 {
+    text-align: center;
+}
+header {
+    min-width: 400px;
+}
+
+/* NAVIGATION */
 nav {
-    padding-bottom: 1.5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
 }
 
 li {
@@ -19,21 +33,13 @@ li {
     font-size: 18px;
 }
 
-
+/* FOOTER */
 footer {
-    background-color: rgb(245, 232, 195);
-    display: flex;
-    flex-flow: row wrap;
-    padding: 1em;
+    background-color: black;
+    color: white;
 }
 
-footer > p {
-    line-height: 1.5px;
-}
 
-h1 {
-    text-align: center;
-}
 
 /* ===== LINKS ===== */
 
@@ -55,16 +61,21 @@ a:visited {
 /* ===== CLASSES AND IDS ===== */
 
 .lrg-text {
-    text-align: left;
+    text-align: center;
     font-size: 40px;
 }
 
+.center-text {
+    text-align: center;
+}
+
 .navi {
+    display: block;
     background-color: black;
     color: white;
     font-family: 'Gotham', sans-serif;
-    display: flex;
-    flex-flow: wrap row;
+    /* display: flex;
+    flex-flow: wrap row; */
 }
 
 .small-img {
@@ -74,15 +85,36 @@ a:visited {
     margin: 1em;
 }
 
-.simpleCart {
-    text-align: center;
-    border: thin solid rgb(121,204,201);
-    border-radius: 10%;
-    margin: auto;
-    width: 20%;
-}
-
 .item-price {
     font-weight: bold;
     line-height: 1.5px;
+}
+
+.right {
+    text-align: right;
+}
+
+.main-logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+}
+
+.center-img {
+    text-align: center;
+}
+
+.table {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-blocks {
+    display: inline-block;
+}
+
+
+.footer-ul {
+    text-align: right;
 }

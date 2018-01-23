@@ -39,30 +39,41 @@ var product_quick_view_container;
 //Put code here to target the div entry point... document.getElementsByClassName
 
 
-product_container = document.createElement("ul") //Start of the container
+product_container = document.createElement("ul");//Start of the container
 
 // Loop that will iterate through the products array, using each product property to fill in the form.
-foreach(product in products){
+for(var i = 0; i< products.length;i++){
 
-form_product += `<li class="product-item"> <img src= ${products[i].src}></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
+form_product += `<li class="product-item"><a href="LINK HERE"> <img src= ${products[i].src}>,/a></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
     <div class="shoppingcartbutton"><a href="#####.com" class="shoppingcartbutton" role="button"></a></div></li>`;
  
 product_container.appendChild(form_product);
 }
+
+//var html += ''
 /*
 //---------product-quick-view-------//
 product_quick_view_container = document.createElement("div"); // quick view wrapper
 product_slider_wrapper = document.createElement("ul");
 
+
+//Append to the div container an html string
+product_quick_view_container += `<div class = "product-quick-view-container">`;
+product_slider_wrapper  += `<ul class="product_slider_wrapper>`;
+
+product_quick_view_container += product_slider_wrapper;
+
+
 // Loop that will iterate through the products array, using each product property to fill in the form.
 foreach(product in products){
 
-    form_product += `<li class="product-item"> <img src= ${products[i].src}></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
-        <div class="shoppingcartbutton"><a href="#####.com" class="shoppingcartbutton" role="button"></a></div></li>`;
+    product_quick_view_container += `<li class="product-slider"> <img src= ${products[i].src}></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
+        </li>`;
      
-    product_quick_view_container.appendChild(form_product);
-    }
-
+    
+    
+}
+product_quick_view_container += `</ul></div>`;
 
 
 */
