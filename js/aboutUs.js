@@ -1,4 +1,4 @@
-function Person(first, last, bio, phone) {
+function Person(first, last, title, phone) {
     this.firstName = first;
     this.lastName = last;
     this.title = title;
