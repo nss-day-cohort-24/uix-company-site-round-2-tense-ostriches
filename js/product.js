@@ -20,34 +20,36 @@ var product = { name: "", description: "", price: 0, url: "", src: ""};
 var products = [];
 
 //Push all products into the array
-products.push = new product("product_1","This product is great!",0,"www.google.com/image/igotthissomewhere", "product1.html");
-products.push = new product("product_2","This product is great!",0,"www.google.com/image/igotthissomewhere", "product2.html");
-products.push = new product("product_3","This product is great!",0,"www.google.com/image/igotthissomewhere", "product3.html");
-products.push = new product("product_4","This product is great!",0,"www.google.com/image/igotthissomewhere", "product4.html");
-products.push = new product("product_5","This product is great!",0,"www.google.com/image/igotthissomewhere", "product4.html");
-products.push = new product("product_6","This product is great!",0,"www.google.com/image/igotthissomewhere", "product5.html");
-products.push = new product("product_7","This product is great!",0,"www.google.com/image/igotthissomewhere", "product6.html");
-products.push = new product("product_8","This product is great!",0,"www.google.com/image/igotthissomewhere", "product7.html");
-products.push = new product("product_9","This product is great!",0,"www.google.com/image/igotthissomewhere", "product8.html");
+products.push = new product("Blue Apron","This product is great!",35,"www.google.com/image/igotthissomewhere", "images/box_food_service.jpg");
+products.push = new product("Elder","This product is great!",44,"www.google.com/image/igotthissomewhere", "images/elderly_lady_visited_by_girl_service.jpg");
+products.push = new product("Fitbit Charge 2","This product is great!",18,"www.google.com/image/igotthissomewhere", "images/fitbit_charge_2.jpg");
+products.push = new product("Private Trainer","This product is great!",33,"www.google.com/image/igotthissomewhere", "images/older_man_free_weight.jpg");
+products.push = new product("Relax Alot","This product is great!",9,"www.google.com/image/igotthissomewhere", "images/massage_shoes.jpg");
+products.push = new product("Life Alert","This product is great!",99,"www.google.com/image/igotthissomewhere", "images/lifealert.png");
+products.push = new product("Customizable Calendar","This product is great!",5,"www.google.com/image/igotthissomewhere", "images/calendar.jpg");
+products.push = new product("Jumprope","This product is great!",22,"www.google.com/image/igotthissomewhere", "images/jumprope.jpg");
+
 
 // Form that holds the products to be populated on the page
 var form_product;
-var product_slider_wrapper;
+// var product_slider_wrapper;
 var product_container;
-var product_quick_view_container;
+// var product_quick_view_container;
 
 //Put code here to target the div entry point... document.getElementsByClassName
 
 
 product_container = document.createElement("ul");//Start of the container
+var element = document.getElementById("product_id");
 
 // Loop that will iterate through the products array, using each product property to fill in the form.
 for(var i = 0; i< products.length;i++){
 
-form_product += `<li class="product-item"><a href="LINK HERE"> <img src= ${products[i].src}>,/a></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
+	form_product += `<li class="product-item"><a href="LINK HERE"> <img src= ${products[i].src}>,/a></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
     <div class="shoppingcartbutton"><a href="#####.com" class="shoppingcartbutton" role="button"></a></div></li>`;
  
-product_container.appendChild(form_product);
+	product_container.appendChild(form_product);
+	element.appendChild(product_container);
 }
 
 //var html += ''
