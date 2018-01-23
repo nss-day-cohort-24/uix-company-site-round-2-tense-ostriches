@@ -98,3 +98,13 @@ a:visited {
     width: 200px;
     height: 40px;
 }
+
+.center-img {
+    text-align: center;
+}
+
+/* .center-img {
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 50%;
+} */
