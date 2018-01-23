@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
 }
-
+body{
+    background-image: url('../images/11.jpg');
+    background-repeat: no-repeat;
+    font-family: 'microsoft yi baili', sans-serif;
+}
 
 /* Style inputs */
 
@@ -10,33 +14,36 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid rgb(163, 158, 158);
+    border: 1px solid rgb(230, 240, 187);
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
+    border-radius: 5px;
 }
 
-input[type=submit] {
-    background-color: rgb(119, 30, 74);
-    color: white;
+.submit {
+    background-color: #7a9c3d;
+    color: rgb(230, 248, 205);
     padding: 12px 20px;
     border: none;
     cursor: pointer;
     border-radius: 10%;
 }
 
-input[type=submit]:hover {
-    background-color: #b684a7;
+.submit:hover {
+    background-color: #e8f5ad;
 }
 
 
 /* Style the container/contact section */
 
 .container {
-    border-radius: 5px;
-    background-color: #ce4f4f;
+    border-radius: 10px;
     padding: 10px;
-    background-image: url('../images/10.jpg');
+    width: 60%;
+    position: absolute;
+    right:50px;
+    
 }
 .img{
     width: 850px;
@@ -54,6 +61,7 @@ input[type=submit]:hover {
     width: 50%;
     margin-top: 6px;
     padding: 20px;
+    
 }
 
 
@@ -65,11 +73,14 @@ input[type=submit]:hover {
     clear: both;
 }
 .my-footer{
-    width: 100%;
-    max-height: 20px;
+    height:95px;
+}
+.my-footer{
     z-index: 3;
     position: absolute;
-    top: 250px;
+    top: 500px;
+    left:-5px;
+
     }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
@@ -80,4 +91,7 @@ input[type=submit]:hover {
         width: 100%;
         margin-top: 0;
     }
+}
+.my-footer{
+    width:600px;
 }
