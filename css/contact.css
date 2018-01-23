@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    background-image: url('../images/11.jpg');
+    background-repeat: no-repeat;
+    font-family: 'microsoft yi baili', sans-serif;
+}
+
+/* Style inputs */
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgb(230, 240, 187);
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    border-radius: 5px;
+}
+
+.submit {
+    background-color: #7a9c3d;
+    color: rgb(230, 248, 205);
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10%;
+}
+
+.submit:hover {
+    background-color: #e8f5ad;
+}
+
+
+/* Style the container/contact section */
+
+.container {
+    border-radius: 10px;
+    padding: 10px;
+    width: 60%;
+    position: absolute;
+    right:50px;
+    
+}
+.img{
+    width: 850px;
+    height: auto;
+    position: absolute;
+    left: 50px;
+    top:250px;
+    z-index: 2;
+}
+
+/* Create two columns that float next to eachother */
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+    
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.my-footer{
+    height:95px;
+}
+.my-footer{
+    z-index: 3;
+    position: absolute;
+    top: 500px;
+    left:-5px;
+
+    }
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .column,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+.my-footer{
+    width:600px;
+}
