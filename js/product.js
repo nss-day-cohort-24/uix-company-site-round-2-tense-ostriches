@@ -14,7 +14,7 @@ function product(n, d, p, u){
 var shopping_stack = document.createElement("button");
 
 // Outline of object of each product.
-var product = { name: "", description: "", price: 0, url: "", src: ""}
+var product = { name: "", description: "", price: 0, url: "", src: ""};
 
 // Container of products
 var products = [];
@@ -32,12 +32,37 @@ products.push = new product("product_9","This product is great!",0,"www.google.c
 
 // Form that holds the products to be populated on the page
 var form_product;
+var product_slider_wrapper;
+var product_container;
+var product_quick_view_container;
 
+//Put code here to target the div entry point... document.getElementsByClassName
+
+
+product_container = document.createElement("ul") //Start of the container
+
+// Loop that will iterate through the products array, using each product property to fill in the form.
 foreach(product in products){
 
-form_product += `<div class="products"> <img src= ${products[i].src}></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br></div>
-    <div class="shoppingcartbutton"><a href="#####.com" class="shoppingcartbutton" role="button"></a></div>` // the loop will iterate through the products array, using each product property to fill in the form.
-
-
-
+form_product += `<li class="product-item"> <img src= ${products[i].src}></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
+    <div class="shoppingcartbutton"><a href="#####.com" class="shoppingcartbutton" role="button"></a></div></li>`;
+ 
+product_container.appendChild(form_product);
 }
+/*
+//---------product-quick-view-------//
+product_quick_view_container = document.createElement("div"); // quick view wrapper
+product_slider_wrapper = document.createElement("ul");
+
+// Loop that will iterate through the products array, using each product property to fill in the form.
+foreach(product in products){
+
+    form_product += `<li class="product-item"> <img src= ${products[i].src}></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
+        <div class="shoppingcartbutton"><a href="#####.com" class="shoppingcartbutton" role="button"></a></div></li>`;
+     
+    product_quick_view_container.appendChild(form_product);
+    }
+
+
+
+*/
