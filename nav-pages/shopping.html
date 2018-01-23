@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HealthyCare</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/shop.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navi">
+         <a href="../index.html"><img src="../images/openideo_logo.png" title="company-logo" class="main-logo" style="padding-top: .6em;"></a>
+
+
+            <nav>
+              <ul style="padding: 10px; padding-left: 20em;">
+                 <li><a href="about.html">about</a></li> &#124; 
+                 <li><a href="contact.html">contact</a></li> &#124;  
+                 <li><a href="../#products">products</a></li> &#124; 
+                 <li><a href="shopping.html">shopping cart</a></li>
+              </ul> 
+        </nav>
+
+    </header>
+
+<main>
+    <div style="margin-left: auto; margin-right: auto; width: 100px;"><img src="../images/orange_teal_sm.png" alt="our statement"><br>
+    </div>
+                <h1>Shopping Cart</h1>
+                <br>
+
+                <div class="table">
+<form class="fieldset" name="books" id="books" method="post" action="http://www.webdevbasics.net/scripts/demo.php">
+    <table>
+    <tr>
+        <th id="cover">Product</th>
+        <th id="description">Product Description</th>
+        <th id="quantity">Quantity</th>
+        <th id="subtotal">Price per product</th>
+        <th id="total">Total per quantity</th>
+    </tr>
+
+    <tr>
+            <td><img src="../images/teal_blue_sm.png" alt="" width="30" height="30" class="center-img"></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$25.19" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="../images/teal_blue_sm.png" alt="" width="30" height="30" class="center-img"></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$30.00" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="../images/teal_blue_sm.png" alt="" width="30" height="30" class="center-img"></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$16.42" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="../images/teal_blue_sm.png" alt="" width="30" height="30" class="center-img"></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$50.00" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="../images/teal_blue_sm.png" alt="" width="30" height="30" class="center-img"></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$25.00" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="../images/teal_blue_sm.png" alt="" width="30" height="30" class="center-img"></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$25.99" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+
+        <tr>
+            <td colspan="3"></td>
+            <td class="right">Total:</td>
+            <td><input type="text" id="qtyTotal" name="qtyTotal" disabled="disabled" size="12"></td>
+        </tr>
+
+        <tr>
+            
+            <td colspan="3" class="button"><input type="button" value="Calculate My Order" onclick="BookOrder()" title="Total Price" alt="Total Price" style="color: red; font-weight:bolder;"></td>
+
+        </tr>
+        <tr>
+            <td colspan="3" class="button"><input type="reset" value="Erase My Order" name="erase" id="erase" title="erase" alt="erase" onclick="BookOrder()"></td>
+        </tr>
+
+        </tr>
+</table></form>
+</div>
+         
+        <script src="../js/shopping.js"></script>
+
+</main>
+
+
+<footer class="footer">
+
+    </footer>
+</body>
+
+</html>
