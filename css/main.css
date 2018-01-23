@@ -10,7 +10,8 @@ body{
 }
 
 nav {
-    padding-bottom: 1.5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
 }
 
 li {
@@ -27,9 +28,15 @@ footer {
     padding: 1em;
 }
 
-footer > p {
-    line-height: 1.5px;
+.table {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+/* footer > p {
+    line-height: 1.5px;
+} */
 
 h1 {
     text-align: center;
@@ -60,11 +67,12 @@ a:visited {
 }
 
 .navi {
+    display: block;
     background-color: black;
     color: white;
     font-family: 'Gotham', sans-serif;
-    display: flex;
-    flex-flow: wrap row;
+    /* display: flex;
+    flex-flow: wrap row; */
 }
 
 .small-img {
@@ -73,16 +81,26 @@ a:visited {
     height: 50px;
     margin: 1em;
 }
-
+/* 
 .simpleCart {
     text-align: center;
     border: thin solid rgb(121,204,201);
     border-radius: 10%;
     margin: auto;
     width: 20%;
-}
+} */
 
 .item-price {
     font-weight: bold;
     line-height: 1.5px;
+}
+
+.right {
+    text-align: right;
+}
+
+.main-logo {
+    float: left;
+    width: 200px;
+    height: 40px;
 }

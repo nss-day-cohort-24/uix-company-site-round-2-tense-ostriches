@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HealthyCare</title>
     <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/shop.css">
 
 </head>
 
@@ -13,65 +14,106 @@
 
     <header>
         <nav class="navi">
-         <a href="../index.html"><img src="../images/openideo_logo.png" title="company-logo" width="300" height="100"></a>
+         <a href="../index.html"><img src="../images/openideo_logo.png" title="company-logo" class="main-logo" style="padding-top: .6em;"></a>
 
-        <div class="flex-container">
+
             <nav>
-              <ul><br>
+              <ul style="padding: 10px; padding-left: 20em;">
                  <li><a href="about.html">about</a></li> &#124; 
                  <li><a href="contact.html">contact</a></li> &#124;  
                  <li><a href="products">products</a></li> &#124; 
                  <li><a href="shopping.html">shopping cart</a></li>
               </ul> 
         </nav>
-     </div>
+
     </header>
 
 <main>
 
                 <h1>Shopping Cart</h1>
-                <div class="simpleCart">
-                        <h2>Item Name Goes Here</h2>
-                    <img src="../images/yellow_yellow_sm.png" alt="alt item" width="50" height="50" class="l-float">
-    
-                    <span class="item_price">$19.99</span>
-    
-                    <a href="javascript:;" class="item_add">Add to Cart</a>
-                 </div>                <div class="simpleCart">
-                        <h2>Item Name Goes Here</h2>
-                    <img src="../images/yellow_yellow_sm.png" alt="alt item" width="50" height="50" class="l-float">
-    
-                    <span class="item_price">$19.99</span>
-    
-                    <a href="javascript:;" class="item_add">Add to Cart</a>
-                 </div>
+                <br>
 
-                 <h1>Shopping Cart</h1>
+                <div class="table">
+<form class="fieldset" name="books" id="books" method="post" action="http://www.webdevbasics.net/scripts/demo.php">
+    <table>
+    <tr>
+        <th id="cover">Product</th>
+        <th id="description">Product Description</th>
+        <th id="quantity">Quantity</th>
+        <th id="subtotal">Price per product</th>
+        <th id="total">Total per quantity</th>
+    </tr>
 
-                 <div>
-                     <ul>
-                         <li><a class="add-to-cart" href="#" data-name="Apple" data-price="1.22">Apple $1.22</a></li>
-                         <li><a class="add-to-cart" href="#" data-name="Banana" data-price="1.33">Banana $1.33</a></li>
-                         <li><a class="add-to-cart" href="#" data-name="Shoe" data-price="22.33">Shoe $22.33</a></li>
-                         <li><a class="add-to-cart" href="#" data-name="Frisbee" data-price="5.22">Frisbee $5.22</a></li>
-                     </ul>
-                     <button id="clear-cart">Clear Cart</button>
-                 </div>
-         
-         
-                 <div>
-                     <ul id="show-cart">
-                         <li>???????</li>
-                     </ul>
-                     <div>You have <span id="count-cart"></span> items in your cart</div>
-                     <div>Total Cart:$<span id="total-cart"></span></div>
-                 </div>
+    <tr>
+            <td><img src="#" alt="" width="" height=""></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$25.19" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="#" alt="" width="" height=""></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$30.00" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="#" alt="" width="" height=""></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$16.42" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="#" alt="" width="" height=""></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$50.00" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="#" alt="" width="" height=""></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$25.00" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+        <tr>
+            <td><img src="#" alt="" width="" height=""></td>
+            <td><input type="text" value="-product description-" id="product1" name="product1" size="32"></td>
+            <td><input type="text" id="quantity1" name="quantity1" size="6"></td>
+            <td><input type="text" value="$25.99" id="product1Price" name="product1Price" disabled="disabled: size="6"></td>
+            <td><input type="text" id="firstTotal" name="firstTotal" size="12"</td>
+        </tr>
+
+        <tr>
+            <td colspan="3"></td>
+            <td class="right">Total:</td>
+            <td><input type="text" id="qtyTotal" name="qtyTotal" disabled="disabled" size="12"></td>
+        </tr>
+
+        <tr>
+            
+            <td colspan="3" class="button"><input type="button" value="Calculate My Order" onclick="BookOrder()" title="Total Price" alt="Total Price" style="color: red; font-weight:bolder;"></td>
+
+        </tr>
+        <tr>
+            <td colspan="3" class="button"><input type="reset" value="Erase My Order" name="erase" id="erase" title="erase" alt="erase" onclick="BookOrder()"></td>
+        </tr>
+
+        </tr>
+</table></form>
+</div>
          
         <script src="../js/shopping.js"></script>
 
 </main>
 
 
+<footer class="footer">
+
+    </footer>
 </body>
 
 </html>
