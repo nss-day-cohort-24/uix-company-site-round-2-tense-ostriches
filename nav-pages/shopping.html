@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>HealthyCare</title>
+    <link rel="stylesheet" href="../css/main.css">
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav class="navi">
+         <a href="../index.html"><img src="../images/openideo_logo.png" title="company-logo" width="300" height="100"></a>
+
+        <div class="flex-container">
+            <nav>
+              <ul><br>
+                 <li><a href="about.html">about</a></li> &#124; 
+                 <li><a href="contact.html">contact</a></li> &#124;  
+                 <li><a href="products">products</a></li> &#124; 
+                 <li><a href="shopping.html">shopping cart</a></li>
+              </ul> 
+        </nav>
+     </div>
+    </header>
+
+<main>
+
+                <h1>Shopping Cart</h1>
+                <div class="simpleCart">
+                        <h2>Item Name Goes Here</h2>
+                    <img src="../images/yellow_yellow_sm.png" alt="alt item" width="50" height="50" class="l-float">
+    
+                    <span class="item_price">$19.99</span>
+    
+                    <a href="javascript:;" class="item_add">Add to Cart</a>
+                 </div>                <div class="simpleCart">
+                        <h2>Item Name Goes Here</h2>
+                    <img src="../images/yellow_yellow_sm.png" alt="alt item" width="50" height="50" class="l-float">
+    
+                    <span class="item_price">$19.99</span>
+    
+                    <a href="javascript:;" class="item_add">Add to Cart</a>
+                 </div>
+
+                 <h1>Shopping Cart</h1>
+
+                 <div>
+                     <ul>
+                         <li><a class="add-to-cart" href="#" data-name="Apple" data-price="1.22">Apple $1.22</a></li>
+                         <li><a class="add-to-cart" href="#" data-name="Banana" data-price="1.33">Banana $1.33</a></li>
+                         <li><a class="add-to-cart" href="#" data-name="Shoe" data-price="22.33">Shoe $22.33</a></li>
+                         <li><a class="add-to-cart" href="#" data-name="Frisbee" data-price="5.22">Frisbee $5.22</a></li>
+                     </ul>
+                     <button id="clear-cart">Clear Cart</button>
+                 </div>
+         
+         
+                 <div>
+                     <ul id="show-cart">
+                         <li>???????</li>
+                     </ul>
+                     <div>You have <span id="count-cart"></span> items in your cart</div>
+                     <div>Total Cart:$<span id="total-cart"></span></div>
+                 </div>
+         
+        <script src="../js/shopping.js"></script>
+
+</main>
+
+
+</body>
+
+</html>

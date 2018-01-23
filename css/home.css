@@ -2,13 +2,16 @@
     box-sizing: border-box;
 }
 
-body{
+.main-img {
+    display: block;
     background-image: url('../images/9.jpg');
     background-repeat: no-repeat;
-    background-size:100%;
-    font-family: 'Microsoft Yi Baiti',sans-serif;
+    background-position: center;
+    width: 67%;
+    height: 500px;
+    margin: auto;
+    border: thin solid black;
+}
 
-}
-h1{
-    font-size:80px;
-}
+
+
