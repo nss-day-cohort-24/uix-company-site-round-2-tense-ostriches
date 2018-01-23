@@ -1,57 +1,60 @@
-// $(".add-to-cart").click(function(event){
-//     event.preventDefault();
-//     var name = $(this).attr("data-name");
-//     var price = Number($(this).attr("data-price"));
-//     shoppingCart.addItemToCart(name, price, 1);
-//     displayCart();
-// });
-// $("#clear-cart").click(function(event){
-//     shoppingCart.clearCart();
-//     displayCart();
-// });
-function displayCart() {
-    var cartArray = shoppingCart.listCart();
-    console.log(cartArray);
-    var output = "";
-    for (var i in cartArray) {
-        output += "<li>"
-            +cartArray[i].name
-            +" <input class='item-count' type='number' data-name='"
-            +cartArray[i].name
-            +"' value='"+cartArray[i].count+"' >"
-            +" x "+cartArray[i].price
-            +" = "+cartArray[i].total
-            +" <button class='plus-item' data-name='"
-            +cartArray[i].name+"'>+</button>"
-            +" <button class='subtract-item' data-name='"
-            +cartArray[i].name+"'>-</button>"
-            +" <button class='delete-item' data-name='"
-            +cartArray[i].name+"'>X</button>"
-            +"</li>";
-    }
-    $("#show-cart").html(output);
-    $("#count-cart").html( shoppingCart.countCart() );
-    $("#total-cart").html( shoppingCart.totalCart() );
-}
-$("#show-cart").on("click", ".delete-item", function(event){
-    var name = $(this).attr("data-name");
-    shoppingCart.removeItemFromCartAll(name);
-    displayCart();
-});
-$("#show-cart").on("click", ".subtract-item", function(event){
-    var name = $(this).attr("data-name");
-    shoppingCart.removeItemFromCart(name);
-    displayCart();
-});
-$("#show-cart").on("click", ".plus-item", function(event){
-    var name = $(this).attr("data-name");
-    shoppingCart.addItemToCart(name, 0, 1);
-    displayCart();
-});
-$("#show-cart").on("change", ".item-count", function(event){
-    var name = $(this).attr("data-name");
-    var count = Number($(this).val());
-    shoppingCart.setCountForItem(name, count);
-    displayCart();
-});
-displayCart();
+
+function BookOrder() {
+
+/* BOOK ORDERS */
+    
+/* FIRST PRODUCT */
+    productName1 = document.books.oneQuantity.value;
+    itemN1 = productName1 * 25.19;
+    document.books.itemN1.value = itemN1.toFixed(2);
+    
+/* FIRST PRODUCT */
+    productName2 = document.books.twoQuantity.value;
+    itemN2 = productName2 * 32.25;
+    document.books.itemN2.value = itemN2.toFixed(2);
+
+/* FIRST PRODUCT */
+    productName3 = document.books.threeQuantity.value;
+    itemN3 = productName3 * 6.70;
+    document.books.itemN3.value = itemN3.toFixed(2);
+
+/* FIRST PRODUCT */	
+    productName4 = document.books.fourQuantity.value;
+    itemN4= productName4 * 14.99;
+    document.books.itemN4.value = itemN4.toFixed(2);
+
+/* FIRST PRODUCT */
+    productName5 = document.books.fiveQuantity.value;
+    itemN5=  productName5 * 30.00;
+    document.books.itemN5.value = itemN5.toFixed(2);
+
+/* FIRST PRODUCT */
+    productName6 = document.books.sixQuantity.value;
+    itemN6 =  productName6 * 11.94;
+    document.books.itemN6.value = itemN6.toFixed(2);
+
+            
+/* CALCULATIONS */
+    
+/* SUB-TOTAL */
+qtyTotal = itemN2 + itemN3 + itemN4 + itemN5 + itemN6;
+    document.books.qtyTotal.value = qtyTotal.toFixed(2);
+    
+
+// /* S & H */
+//     if ( SubTotal <= 10 ) 
+//     {sH = 5;		}
+//     else  {
+//     sH = ( SubTotal * 0.035) + 5;	}
+//     document.books.shipping.value = sH.toFixed(2);
+                
+                
+// /* TAXES */
+//     SalesTax = document.books.countyTax.value; 
+//     CountyTax = SalesTax * SubTotal;
+//     document.books.tax.value = CountyTax.toFixed(2);
+    
+/* GRAND-TOTAL */
+        TotalPrice = qtyTotal;
+        document.books.totalPrice.value = TotalPrice.toFixed(2);
+        }
