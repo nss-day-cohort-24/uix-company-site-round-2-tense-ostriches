@@ -10,9 +10,10 @@ body {
 }
 
 /* NAVIGATION */
-nav {
+nav ul{
     padding-bottom: .5em;
     padding-left: 1em;
+    top:
 }
 
 li {
@@ -27,6 +28,7 @@ footer {
     color: white;
 }
 /* Style inputs */
+
 
 input[type=text],
 select,
@@ -43,16 +45,22 @@ textarea {
 .submit {
     background-color: #7a9c3d;
     color: rgb(230, 248, 205);
-    padding: 12px 20px;
+    padding: 10px 25px;
     border: none;
     cursor: pointer;
-    border-radius: 10%;
+    border-radius: 50%;
+    font-size: 20px;
 }
 
 .submit:hover {
     background-color: #e8f5ad;
+    color: rgb(95, 134, 45);
 }
+.submit:visited{
+    background-color:red;
+    color: #fffffd;
 
+}
 
 /* Style the container/contact section */
 
@@ -62,6 +70,22 @@ textarea {
     width: 60%;
     position: absolute;
     right:50px;
+    top:250px;
+   font-size: 23px;
+   font-weight: 600;
+}
+.container h2 {
+    position: absolute;
+    left:585px;
+    top: -100px;
+    font-weight: 800;
+    font-family: 'Microsoft YaHei UI',sans-serif;
+}
+.container p{
+  position: absolute;
+  left:590px;
+  top:-30px;
+
 }
 
 .img {
