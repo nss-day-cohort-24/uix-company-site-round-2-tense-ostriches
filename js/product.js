@@ -28,6 +28,8 @@ let productArr = [
 	new product("Jumprope","This product is great!",22,"www.google.com/image/igotthissomewhere", "images/jumprope.jpg")
 ];
 
+
+
 // Form that holds the products to be populated on the page
 var form_product;
 
