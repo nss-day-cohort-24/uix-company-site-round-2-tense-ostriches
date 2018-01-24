@@ -28,14 +28,6 @@ let productArr = [
 // Form that holds the products to be populated on the page
 var form_product;
 
-// var product_quick_view_container;
-// var product_slider_wrapper;
-//Put code here to target the div entry point... document.getElementsByClassName
-
-
-//var product_container = document.createElement("ul");//Start of the container
-//var element = document.getElementById("product_id");
-
 var product_container = "<div>";
 
 // Loop that will iterate through the products array, using each product property to fill in the form.
