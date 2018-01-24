@@ -1,7 +1,127 @@
-*{
-    box-sizing: border-box;
+* {
+    margin: 0;
+    padding: 0;
 }
 
+<<<<<<< HEAD
+
+/* ===== MAIN ELEMENTS ===== */
+
+body {
+    font-family: 'Microsoft Yi Baiti', sans-serif;
+}
+
+main {
+    padding-left: 12em;
+    padding-right: 12em;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    min-width: 400px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    padding-bottom: .5em;
+    padding-left: 1em;
+}
+
+li {
+    display: inline;
+    font-variant: small-caps;
+    font-size: 18px;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+
+/* ===== LINKS ===== */
+
+a:link {
+    color: rgb(217, 222, 222);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(231, 90, 107);
+}
+
+a:visited {
+    color: rgb(16, 185, 210);
+}
+
+
+/* ===== CLASSES AND IDS ===== */
+
+.lrg-text {
+    text-align: center;
+    font-size: 40px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.navi {
+    display: block;
+    background-color: black;
+    color: white;
+    font-family: 'Gotham', sans-serif;
+    /* display: flex;
+    flex-flow: wrap row; */
+}
+
+.small-img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin: 1em;
+}
+
+.item-price {
+    font-weight: bold;
+    line-height: 1.5px;
+}
+
+.right {
+    text-align: right;
+}
+
+.main-logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+}
+
+.center-img {
+    text-align: center;
+}
+
+.table {
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-blocks {
+    display: inline-block;
+}
+
+.footer-ul {
+    text-align: right;
+=======
 .main-img {
     display: absolute;
     background-image: url('../images/1.jpg');
@@ -11,7 +131,13 @@
     width: 100%;
     height: 700px;
     margin: auto;
+>>>>>>> 22953b447811c48e6c83625a527bd2818daa966f
 }
 
 
+/* JAAAAAAAAAAAAAAAVASCRIIIIIIIIIIIIPT */
 
+#product_id {
+    width: 150px;
+    height: 150px;
+}
