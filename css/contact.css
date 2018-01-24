@@ -1,20 +1,33 @@
-/* * {
+ * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    
 }
-body {
+/*body {
     background-image: url('../images/11.jpg');
     background-repeat: no-repeat;
     font-family: 'microsoft yi baili', sans-serif;
-} */
+}
 
 /* NAVIGATION */
-<<<<<<< HEAD
-nav ul{
-=======
-/* nav {
->>>>>>> 22953b447811c48e6c83625a527bd2818daa966f
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url('../images/3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav a{
+    text-decoration-line: none;
+    color: aliceblue;
+    text-align: left;
+}
+nav a:hover{
+    color: aquamarine;
+    font-size-adjust: 2em;
+}
+
+nav {
     padding-bottom: .5em;
     padding-left: 1em;
     top:
@@ -24,17 +37,37 @@ li {
     display: inline;
     font-variant: small-caps;
     font-size: 18px;
-} */
+} 
 
-/* FOOTER */
-/* footer {
+ footer {
     background-color: black;
     color: white;
-} */
+} 
 
 /* Style inputs for forms */
 
+    header {
+        background-color: black;
+        height: 85px;
+        width: 100%;
+        margin: -18px -10px 0px -5px;
+        }
 
+nav {
+    padding-left: 6em;
+    padding-top: -50px;
+}
+nav li {
+    display: inline;
+    align-items: flex-end;
+    list-style-type: none; 
+   /* float: right;*/
+    font-variant: small-caps;
+    padding-right: 40px;
+    margin-left: 40px;
+    font-size: 25px;
+    top: 25px;
+}
 input[type=text],
 select,
 textarea {
@@ -62,53 +95,45 @@ textarea {
     color: rgb(95, 134, 45);
 }
 .submit:visited{
-    background-color:red;
+    background-color:rgb(238, 192, 192);
     color: #fffffd;
 
 }
 
 /* Style the container/contact section */
 
-.form-container {
+.container form {
     border-radius: 10px;
     padding: 10px;
-    width: 60%;
+    width: 30%;
     position: absolute;
-    right:50px;
-    top:250px;
+    right:100px;
+    top:200px;
    font-size: 23px;
    font-weight: 600;
 }
-.container h2 {
+.container h1{
     position: absolute;
-    left:585px;
-    top: -100px;
+    left:50px;
+    top: 415px;
     font-weight: 800;
+    font-size: 70px;
     font-family: 'Microsoft YaHei UI',sans-serif;
+    color:white;
 }
 .container p{
   position: absolute;
-  left:590px;
-  top:-30px;
+  left:50px;
+  top:550px;
+  font-size: 35px;
 
 }
-/* 
-.img {
-    width: 850px;
-    height: auto;
-    position: absolute;
-    left: 50px;
-    top:250px;
-    z-index: 2;
-} */
-
-/* .product-blocks {
+ .product-blocks {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-around;
-} */
+} 
 
-/* Create two columns that float next to eachother */
 
 .column {
     float: left;
@@ -118,14 +143,34 @@ textarea {
     
 }
 
-/* Clear floats after the columns */
-
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
+.main-logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    left: 40px;
+    top: 15px;
+}
+#map{
+    position: absolute;
+    right:50px;
+    top:600px;
+    /* z-index: 5; */}
+.footer-ul{
+     position: absolute;
+     bottom:0px ;
+     width: 100%;
+}
+footer{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
 

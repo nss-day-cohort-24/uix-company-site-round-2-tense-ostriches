@@ -2,18 +2,18 @@
 <html>
 
 <head>
-    <title>contact us</title>
+    <title>Contact Fit-U team</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- <link rel="stylesheet" href="css/normalize.css">-->
     <link rel="stylesheet" href="../css/contact.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <!--<link rel="stylesheet" href="../css/main.css">-->
 
 </head>
 
 <body>
-        <!-- <header>
+         <header>
                 <nav class="navi">
                  <a href="../index.html"><img src="../images/openideo_logo.png" title="company-logo" class="main-logo" style="padding-top: .6em;"></a>
                 <nav>
@@ -25,48 +25,31 @@
                       </ul> 
                 </nav>
         
-            </header> -->
+           </header> 
 
-            <header>
-                    <div class="navi">
-                    <a href="index.html"><img src="../images/openideo_logo.png" title="company-logo" class="main-logo" style="padding-top:.5em; padding-left:20px; width:60px;"></a>
-                    
-                        <nav>
-                            <ul style="padding: 10px; padding-left: 20em;">
-                                <li><a href="aboutUs.html">about us</a></li> &#124; 
-                                <li><a href="#">contact</a></li> &#124;  
-                                <li><a href="../index.html">products</a></li> &#124; 
-                                <li><a href="shopping.html">shopping cart</a></li>
-                            </ul> 
-                        </nav>     
-                    </div>
-                 </header>
 <main>
-<<<<<<< HEAD
     <div class="container">
         <div>
-=======
-    <div class="form-container">
-        <div style="text-align:center">
->>>>>>> 22953b447811c48e6c83625a527bd2818daa966f
-            <h2>Contact  with Us</h2>
-            <p>Please use the form below to contact us with your questions or comments:</p>
+            <h1>Have questions for Fit-U team? </h1>
+            <p>Please use the form below to contact us with your questions or comments.</p>
             <!--<img src="images/3.jpg" alt="we are" class="img">-->
         </div>
-        <div class="row">
+        <div class="row"><!--  start of form-->
+        
+                <div id="map" style="width:25%;height:250px;" ></div> 
                 <div class="column">
-                    <!-- <div id="map" style="width:100%;height:500px"></div> -->
-                </div>
-                <div class="column">
-                    <form action="/action_page.php">
+                    <form action="">
                         <label for="fname">First Name</label>
                         <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                        <label for="lname">Address</label>
+                        <input type="text" id="lname" name="Address" placeholder="Your Full Address..">
                         <label for="country">Country</label>
                         <select id="country" name="country" placeholder="your country...">
-                            <option value="australia">Australia</option>
+                            <option value="australia">Other</option>
                             <option value="canada">Canada</option>
+                            <option value="usa">Europe</option>
+                            <option value="usa">Australia</option>
+                            <option value="usa">Asia</option>
                             <option value="usa">USA</option>
                         </select>
                         <label for="subject">Subject</label>
@@ -74,49 +57,27 @@
                         <input type="submit" value="Submit" class="submit">
                     </form>
                 </div>
-            </div>
-    </div>
+        
+        
+    </div><!--  end of form-->
 
-    <!-- <img src="../images/5bg.png" class="footer-img"> -->
-
-
-    </main>
-<<<<<<< HEAD
-    <script src="js/contact.js"></script>
-=======
-<!-- 
->>>>>>> 22953b447811c48e6c83625a527bd2818daa966f
-    <footer>
-            
-            <ul class="footer-ul">
-                <li>powered by openideo, inc. &copy; copyright</li>&nbsp; &nbsp; 
-                <br>
-                    <li><a href="nav-pages/about.html">about</a></li> &#124; 
-                    <li><a href="nav-pages/contact.html">contact</a></li> &#124;  
-                    <li><a href="../#products">products</a></li> &#124; 
-                    <li><a href="nav-pages/shopping.html">shopping cart</a></li> &nbsp;  &nbsp; 
-            </ul>
-    </footer> -->
-
-
-    <div class="footer-ul">
-            <footer> powered by open ideo, inc. &copy; copyright</p>&nbsp; &nbsp; 
-                    <!-- <br>
-                        <li><a href="nav-pages/about.html">about</a></li> &#124; 
-                        <li><a href="nav-pages/contact.html">contact</a></li> &#124;  
-                        <li><a href="../#products">products</a></li> &#124; 
-                        <li><a href="nav-pages/shopping.html">shopping cart</a></li> &nbsp;  &nbsp;  -->
-            </footer>
-                    
-        </div>
-    
-<<<<<<< HEAD
-   
-=======
-
-    <script src="../js/contact.js"></script>
-
->>>>>>> 22953b447811c48e6c83625a527bd2818daa966f
+          <!--   <div class="my-map">
+                <script>
+                    function myMap() {
+                        var myCenter = new google.maps.LatLng(51.508742, -0.120850);
+                        var mapCanvas = document.getElementById("map");
+                        var mapOptions = { center: myCenter, zoom: 12 };
+                        var map = new google.maps.Map(mapCanvas, mapOptions);
+                        var marker = new google.maps.Marker({ position: myCenter }); marker.setMap(map);
+                    }
+                </script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=million-193118&callback=myMap"></script>
+            </div>-->
+ </main>
+  <div class="footer-ul">
+            <footer> powered by open ideo, inc. &copy; copyright</p>&nbsp; &nbsp; </footer>
+   </div>
+     
 </body>
 
 </html>

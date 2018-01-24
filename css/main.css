@@ -9,9 +9,9 @@ font-family: 'Lora', serif; */
 /* ===== MAIN ELEMENTS ===== */
 
 body {
-<<<<<<< HEAD
+
     font-family: 'Microsoft Yi Baiti', sans-serif;
-      /*  display: block;
+       display: block;
         background-image: url('../images/1.jpg');
         background-repeat: no-repeat;
         background-position: center;
@@ -25,9 +25,8 @@ body {
 /*main {
     padding-left: 12em;
     padding-right: 12em;
-}*/
-=======
-    /* font-family: 'Microsoft Yi Baiti', sans-serif; */
+}
+   font-family: 'Microsoft Yi Baiti', sans-serif; */
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -35,7 +34,6 @@ main {
     padding-left: 5em;
     padding-right: 5em;
 }
->>>>>>> 22953b447811c48e6c83625a527bd2818daa966f
 
 h1, h2 {
     text-align: center;
