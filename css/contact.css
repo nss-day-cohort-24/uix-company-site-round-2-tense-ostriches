@@ -68,7 +68,7 @@ nav li {
     font-size: 25px;
     top: 25px;
 }
-input[type=text],
+/* input[type=text],
 select,
 textarea {
     width: 100%;
@@ -78,7 +78,7 @@ textarea {
     margin-bottom: 16px;
     resize: vertical;
     border-radius: 5px;
-}
+} */
 
 .submit {
     background-color: #7a9c3d;
