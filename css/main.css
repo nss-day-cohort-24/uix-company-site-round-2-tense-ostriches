@@ -123,8 +123,11 @@ a:visited {
 
 /* JAAAAAAAAAAAAAAAVASCRIIIIIIIIIIIIPT */
 
-#product_id {
-
-    width: 150px;
-    height: 150px;
+.product {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: auto;
+    padding: auto;
+    width: 60%;
 } 
