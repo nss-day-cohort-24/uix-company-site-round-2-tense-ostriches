@@ -11,19 +11,23 @@
     
 </head>
 <body>
+
     <header>
-        <nav>
-            <ul>
-                <li>
-                <!-- <a href="../home.html"><img src="images/openideo_logo.png" width="300" height="70"></a></li> -->
-                <li><a href="product.html" target="_blank">Product</a></li>
-                <li><a href="Community.html" target="_blank">Community</a></li>
-                <li><a href="nav-pages/shopping.html" target="_blank">Shopping Cart</a></li>
-                <li><a href="About Us.html" target="_blank">About Us</a></li>
-                <li><a href="Contact Us.html" target="_blank">Contact Us</a></li>
-            </ul>
+        <nav class="navi">
+         <a href="../index.html"><img src="../images/openideo_logo.png" title="company-logo" class="main-logo" style="padding-top: .6em;"></a>
+
+
+            <nav>
+              <ul style="padding: 10px; padding-left: 20em;">
+                 <li><a href="nav-pages/aboutUs.html">about</a></li> &#124; 
+                 <li><a href="nav-pages/contact.html">contact</a></li> &#124;  
+                 <li><a href="#products">products</a></li> &#124; 
+                 <li><a href="nav-pages/shopping.html">shopping cart</a></li>
+              </ul> 
         </nav>
+
     </header>
+
 
     <main>
 
@@ -51,11 +55,11 @@
                     the statement of Residents' Rights which is incorporated into the policies of St. Paul's Senior Community.</p>
             </div>
                 <div>
-                    <h2>Our Products</h2>
+                    <h2 id="products">Our Products</h2>
                     <img src="images/teal_green_sm.png" class="small-img" alt="our statement">
                     <p>Most important, you'll be doing something now that could well be heading off an emergency situation in the future.</p>
                     <div id="product_id">
-                        <!--This is the javascript class that populates the products cards --><section class="product-item"></section>-->
+                        <!--This is the javascript class that populates the products cards --><section class="product-item"></section>
                     </div>
                 </div>
                 </section>
@@ -64,10 +68,18 @@
 
     </main>
 
-    <footer class="footer">
-        <img src="images/teal_blue_sm.png" width="30" height="30">
-        <p>&copy;Copyright Seniors 2018.</p>
-    </footer>
+
+    <footer>
+            
+        <ul class="footer-ul">
+            <li style="text-align: left;">powered by openideo, inc. &copy; copyright</li>&nbsp; &nbsp; 
+            <br>
+                <li><a href="aboutUs.html">about</a></li> &#124; 
+                <li><a href="contact.html">contact</a></li> &#124;  
+                <li><a href="../#products">products</a></li> &#124; 
+                <li><a href="shopping.html">shopping cart</a></li> &nbsp;  &nbsp; 
+        </ul>
+</footer>
     
     <script src="js/product.js"></script>
 </body>
