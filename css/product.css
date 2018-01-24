@@ -1,0 +1,32 @@
+/* product_blocks */
+
+.product_blocks {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+/* product_blocks images */
+
+.product_blocks .product-item-01 img,
+.product_blocks .product-item-02 img,
+.product_blocks .product-item-03 img,
+.product_blocks .product-item-04 img,
+.product_blocks .product-item-05 img,
+.product_blocks .product-item-06 img,
+.product_blocks .product-item-07 img, 
+.product_blocks .product-item-08 img {
+    width: 300px;
+    height: 200px;
+}
+
+/* #product-items */
+
+
+
+/* .product-detail-00  */
+
+
+
+/* product-detail-00 */
