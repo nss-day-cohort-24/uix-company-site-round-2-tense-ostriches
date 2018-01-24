@@ -26,6 +26,7 @@ let productArr = [
 	new product("Jumprope","This jumprope can help you get a fabulous burn.",22,"www.google.com/image/igotthissomewhere", "images/jumprope.jpg")
 ];
 
+
 // Form that holds the products to be populated on the page
 var form_product;
 
