@@ -27,7 +27,6 @@ let productArr = [
 ];
 
 
-
 // Form that holds the products to be populated on the page
 var form_product;
 
