@@ -1,7 +1,5 @@
 
-function BookOrder() {
-
-/* BOOK ORDERS */
+function ProductOrder() {
     
 /* FIRST PRODUCT */
 
@@ -22,25 +20,8 @@ function BookOrder() {
             
 /* CALCULATIONS */
     
-/* SUB-TOTAL */
-
-    // document.books.subTotal.value = qtyTotal.toFixed(2);
-    
-
-// /* S & H */
-//     if ( SubTotal <= 10 ) 
-//     {sH = 5;		}
-//     else  {
-//     sH = ( SubTotal * 0.035) + 5;	}
-//     document.books.shipping.value = sH.toFixed(2);
-                
-                
-// /* TAXES */
-//     SalesTax = document.books.countyTax.value; 
-//     CountyTax = SalesTax * SubTotal;
-//     document.books.tax.value = CountyTax.toFixed(2);
-    
 /* GRAND-TOTAL */
-subTotal = firstTotal + secondTotal + thirdTotal;
-        document.books.subTotal.value = TotalPrice.toFixed(2);
-        }
+    subTotal = itemN1 + itemN2 + itemN3;
+    document.books.TotalPrice.value = subTotal.toFixed(2);
+
+}
