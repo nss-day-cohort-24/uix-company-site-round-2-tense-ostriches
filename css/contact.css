@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -7,10 +7,14 @@ body {
     background-image: url('../images/11.jpg');
     background-repeat: no-repeat;
     font-family: 'microsoft yi baili', sans-serif;
-}
+} */
 
 /* NAVIGATION */
+<<<<<<< HEAD
 nav ul{
+=======
+/* nav {
+>>>>>>> 22953b447811c48e6c83625a527bd2818daa966f
     padding-bottom: .5em;
     padding-left: 1em;
     top:
@@ -20,14 +24,15 @@ li {
     display: inline;
     font-variant: small-caps;
     font-size: 18px;
-}
+} */
 
 /* FOOTER */
-footer {
+/* footer {
     background-color: black;
     color: white;
-}
-/* Style inputs */
+} */
+
+/* Style inputs for forms */
 
 
 input[type=text],
@@ -64,7 +69,7 @@ textarea {
 
 /* Style the container/contact section */
 
-.container {
+.form-container {
     border-radius: 10px;
     padding: 10px;
     width: 60%;
@@ -87,7 +92,7 @@ textarea {
   top:-30px;
 
 }
-
+/* 
 .img {
     width: 850px;
     height: auto;
@@ -95,13 +100,13 @@ textarea {
     left: 50px;
     top:250px;
     z-index: 2;
-}
+} */
 
-.product-blocks {
+/* .product-blocks {
     display: flex;
     flex-flow: wrap row;
     justify-content: space-around;
-}
+} */
 
 /* Create two columns that float next to eachother */
 

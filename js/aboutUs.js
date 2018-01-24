@@ -6,7 +6,7 @@ function Person(first, last, title, phone) {
 }
 
 Person.prototype.badge = function() {
-    return "<h3>" + this.firstName + " " + this.lastName + "</h3>" + "<p>" + this.title + "<br>" + this.phone + "</p>"
+    return "<h4>" + this.firstName + " " + this.lastName + "</h4>" + "<p>" + this.title + "<br>" + this.phone + "</p>"
 };
 
 var staffThip = new Person("Phonethip", "Hobson", "Fit-U team lead", "888-567-8910");

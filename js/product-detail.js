@@ -1,4 +1,3 @@
-
 function product(n, d, p, u, img){
 
 	this.name = n;
@@ -26,24 +25,15 @@ let productArr = [
 	new product("Jumprope","This product is great!",22,"www.google.com/image/igotthissomewhere", "images/jumprope.jpg")
 ];
 
-
 // Form that holds the products to be populated on the page
 var form_product;
-
-// var product_quick_view_container;
-// var product_slider_wrapper;
-//Put code here to target the div entry point... document.getElementsByClassName
-
-
-//var product_container = document.createElement("ul");//Start of the container
-//var element = document.getElementById("product_id");
 
 var product_container = "<div>";
 
 // Loop that will iterate through the products array, using each product property to fill in the form.
 for(let i = 0; i < productArr.length;i++){
 
-	form_product += `<section class="product-item">
+	form_product += `<article class="product-detail-item">
 	<a href=>
 	<img src="${productArr[i].img}">
 		</a> 
@@ -52,7 +42,7 @@ for(let i = 0; i < productArr.length;i++){
 	<div class="shoppingcartbutton">
 	<a href="####FOR SHOPPING CART PAGE####.com" class="shoppingcartbutton" role="button"></a>
 		</div>
-	</section>`;
+	</article>`;
  
 	
 }
@@ -61,34 +51,5 @@ for(let i = 0; i < productArr.length;i++){
 product_container += form_product + "</div>";
 
 //element.appendChild(product_container);
-document.getElementById("product_id").innerHTML += product_container;
+document.getElementsByClassName("product-detail").innerHTML += product_container;
 
-
-
-//var html += ''
-/*
-//---------product-quick-view-------//
-product_quick_view_container = document.createElement("div"); // quick view wrapper
-product_slider_wrapper = document.createElement("ul");
-
-
-//Append to the div container an html string
-product_quick_view_container += `<div class = "product-quick-view-container">`;
-product_slider_wrapper  += `<ul class="product_slider_wrapper>`;
-
-product_quick_view_container += product_slider_wrapper;
-
-
-// Loop that will iterate through the products array, using each product property to fill in the form.
-foreach(product in products){
-
-    product_quick_view_container += `<li class="product-slider"> <img src= ${products[i].src}></br><h3>${products[i].name}</h3></br><h4>${products[i].description}</h4></br><h4>${products[i].price}</h4></br>
-        </li>`;
-     
-    
-    
-}
-product_quick_view_container += `</ul></div>`;
-
-
-*/
